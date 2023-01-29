@@ -1,0 +1,815 @@
+@font-face {
+    font-family: Nunito-Regular;
+    src: url('../fonts/Nunito-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito-Regular;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.logo-div h3 {
+    color: #e3a848;
+}
+
+/* ----------------- Nav Bar --------------------- */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 17px;
+    background-color: #0a192fe3;
+    
+    animation: nav-load 600ms ease-in-out;
+}
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.nav-links ul li a {
+    /* color: #ccd6f6; */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    color: #e3a848;
+}
+
+.nav-links ul li:hover {
+    color: #e3a848;
+}
+.hambuger-icon{
+    cursor: pointer;
+    height: 35px;
+    display: none;
+}
+
+
+
+/* ----------------- Landing Page -------------- */
+.main-div {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+.intro-div {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 80px;
+
+    animation: span-load 500ms ease-in-out;
+}
+
+@keyframes span-load {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#main-img {
+    width: 100%;
+    height: 50vh;
+}
+
+#main-img:hover {
+    transition: all 0.5s;
+    filter: none;
+}
+
+.left-intro {
+    color: #d9d9da;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 45vw;
+}
+
+.yellow-span {
+    color: #e3a848;
+}
+
+.dev-div {
+    font-size: 1.6rem;
+}
+
+.pink-span {
+    color: #fd658a;
+}
+
+#small-txt{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me-btn-div{
+    cursor: pointer;
+    color: #e3a848;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    margin-top: 25px;
+    border: 2px solid #e3a848;
+    padding: 6px 8px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+.about-me-btn-div:hover{
+    background-color: #e3a848;
+    color: #0a192f;
+}
+
+
+
+
+/* ----------------- About Page -------------- */
+
+.about-div {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+#about-img {
+    width: 100%;
+    height: 65vh;
+}
+
+.about-main-div{
+    margin-top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about-right{
+    color: #d9d9da;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 40vw;
+}
+.about-body{
+    border: 3px solid #e3a848;
+    border-radius: 12px;
+    padding: 25px;
+    padding-bottom: 10px;
+}
+.div-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    color: #fd658a;
+    font-weight: bold;
+}
+.about-main{
+    margin-top: 15px;
+}
+.social-logo-div{
+    margin-top: 7px;
+}
+.social-logo-div a img:hover{
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px rgb(129 148 176 / 29%);
+}
+
+
+
+
+/* ----------------- Skills Page -------------- */
+
+.skills-div{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+.skills-main-div{
+    margin-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.skills-card-main-div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-card-img{
+    width: 90px;
+    height: 90px;
+}
+
+.skills-card{
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: rgb(129 148 176 / 23%);
+}
+.skills-card:hover{
+    box-shadow: 5px 12px 50px rgb(129 148 176 / 29%);
+}
+.skill-name{
+    color: white;
+    text-align: center;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ----------------- Education Page -------------- */
+
+.edu-div{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+.edu-main-div{
+    margin-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.edu-img{
+    border-radius: 10px;
+    width: 280px;
+    height: 120px;
+}
+
+.edu-card-main-div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.edu-card{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: rgb(129 148 176 / 23%);
+}
+.edu-card:hover{
+    box-shadow: 5px 12px 51px rgb(129 148 176 / 29%);
+}
+
+.edu-details{
+    margin-left: 20px;
+}
+.course-name{
+    color: white;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.college-name{
+    margin: 8px 0px;
+    color: #a7a7a7;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.course-year{
+    color: #e3a848;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+
+
+
+
+/* ----------------- Project Page -------------- */
+
+.project-div{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+.project-main-div{
+    margin-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.project-card-main-div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-img{
+    width: 250px;
+    height: 150px;
+}
+
+.project-card{
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: rgb(129 148 176 / 23%);
+}
+.project-card:hover{
+    box-shadow: 5px 12px 51px rgb(129 148 176 / 29%);
+}
+.project-name{
+    margin: 8px;
+    color: white;
+    text-align: center;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.project-card-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-card-btn{
+    cursor: pointer;
+    color: #e3a848;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    margin: 10px;
+    border: 2px solid #e3a848;
+    padding: 4px 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+.project-card-btn:hover{
+    background-color: #e3a848;
+    color: #0a192f;
+}
+
+
+
+
+/* -------------------- Contact Page ----------------- */
+
+.contact-div{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0a192f;
+}
+
+.contact-main-div{
+    margin-top: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#login-img{
+    height: 50vh;
+}
+.contact-card-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-input{
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    color: #e3a848;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px 14px;
+    background-color: rgb(129 148 176 / 23%);
+    width: 450px;
+    margin: 20px;
+}
+.form-input:focus{
+    background-color: #a7a7a7;
+}
+.input-label{
+    cursor: default;
+    padding-bottom: 5px;
+}
+.input-box{
+    outline: none;
+    border: none;
+    background-color: rgb(50 56 65 / 23%);
+    color: white;
+    width: 100%;
+    font-family: Nunito-Regular;
+    font-size: 17px;
+}
+.input-box:focus{
+    border: none;
+    outline: none;
+}
+textarea{
+    resize: none;
+}
+.login-right{
+    border: 3px solid #e3a848;
+    border-radius: 12px;
+    padding: 20px;
+}
+.contact-heading{
+    margin-bottom: 0px;
+}
+
+#submit-btn{
+    cursor: pointer;
+    color: #e3a848;
+    font-family: Nunito-Regular;
+    font-weight: bold;
+    margin: 10px;
+    border: 2px solid #e3a848;
+    padding: 6px 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+#submit-btn:hover{
+    background-color: #e3a848;
+    color: #0a192f;
+}
+.submit-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar Responsive */
+@media screen and (max-width: 720px) {
+    .hambuger-icon{
+        display: block;
+    }
+    .nav-bar{
+        display: block;
+    }
+    .logo-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links ul{
+        display: none;
+        /* display: grid; */
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links ul li{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 441px) {
+    .nav-bar{
+        padding: 20px 20px;
+    }
+}
+
+
+
+/* Landing Page Responsive */
+
+@media screen and (max-width: 1020px) {
+    .left-intro{
+        font-size: 2.2rem;
+    }
+    .dev-div {
+        font-size: 1.4rem;
+    }
+    .about-me-btn-div{
+        width: 112px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .left-intro{
+        width: 55vw;
+    }
+    
+}
+
+@media screen and (max-width: 848px) {
+    .left-intro{
+        width: 65vw;
+    }
+    
+}
+
+@media screen and (max-width: 796px) {
+    .left-intro{
+        font-size: 2.0rem;
+    }
+    .dev-div {
+        font-size: 1.3rem;
+    }
+    .about-me-btn-div{
+        width: 112px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .intro-div{
+        margin-top: 90px;
+        display: grid;
+    }
+    #main-img {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .left-intro {
+        font-size: 1.9rem;
+    }
+    .intro-div{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #small-txt{
+        width: 80vw;
+    }
+    .intro-flex-div{
+        display: grid;
+    }
+}
+
+
+
+/* About Page Responsive */
+@media screen and (max-width: 559px) {
+    #about-img{
+        display: none;
+    }
+    .about-main-div{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-right: 40px;
+    }
+    .about-right{
+        width: 80vw;
+    }
+}
+
+/* Skills Page Responsive */
+@media screen and (max-width: 844px) {   
+    .skills-card-main-div{
+        grid-template-columns: auto auto auto;
+    }
+    .skills-card-img{
+        width: 70px;
+        height: 70px;
+    }
+    .skills-card{
+        margin: 5px;
+    }
+    .skills-main-div{
+        margin-top: 50px;
+    }
+    .skills-heading{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 456px) {
+    .skills-card-img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .skills-main-div{
+        margin-top: 100px;
+    }
+    .skills-card-img{
+        width: 50px;
+        height: 50px;
+    }
+    .skill-name{
+        font-size: 0.8rem;
+    }
+}
+
+/* Education Page Responsive */
+@media screen and (max-width: 724px) {
+    .course-name{
+        font-size: 1.3rem;
+    }
+    .edu-main-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 589px) {
+    .edu-img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 509px) {
+    .course-name{
+        font-size: 1.2rem;
+    }
+    .college-name{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 498px) {
+    .edu-img{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .course-name{
+        font-size: 1.0rem;
+    }
+}
+@media screen and (max-width: 444px) {
+    .edu-img{
+        width: 130px;
+    }
+    .course-year{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 371px) {
+    .edu-img{
+        display: none;
+    }
+    .edu-main-div{
+        margin-top: 130px;
+    }
+}
+
+
+/* Project Page Responsive */
+@media screen and (max-width: 1075px) {
+    .project-card-main-div{
+        grid-template-columns: auto auto;
+    }
+    .project-card-img{
+        height: 100px;
+    }
+    .project-main-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1075px) {
+    .project-card{
+        margin: 5px;
+    }
+    .project-main-div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .project-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-card-main-div{
+        grid-template-columns: auto;
+    }
+    .project-name{
+        font-size: 1.2rem;
+    }
+    .project-card-img{
+        width: 200px;
+    }
+    .outer-project-div{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .project-card-btn-div{
+        display: grid;
+    }
+    .project-card-btn{
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .project-name{
+        font-size: 1.0rem;
+    }    
+    .project-card-btn{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .project-card-img{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 345px) {
+    .project-card-img{
+        width: 110px;
+    }
+}
+@media screen and (max-width: 306px) {
+    .project-card{
+        display: grid;
+    }
+    .project-card-img{
+        display: none;
+    }
+}
+
+
+/* Contact Form */
+@media screen and (max-width: 1004px) {
+    .contact-card-main-div{
+        display: grid;
+    }
+    #login-img{
+        display: none;
+    }
+    .contact-main-div{
+        margin-top: 110px;
+    }
+}
+@media screen and (max-width: 569px) {
+    .form-input{
+        width: 340px;
+    }
+}
+@media screen and (max-width: 457px) {
+    .login-right{
+        padding: 10px;
+    }
+    .form-input{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 328px) {
+    .login-right{
+        padding: 10px 5px;
+    }
+    .form-input{
+        width: 200px;
+    }
+}
