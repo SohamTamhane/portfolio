@@ -90,3 +90,6 @@ hamburger_icon.addEventListener('click', function(){
     }
 
 });
+
+// Disable Right Click
+document.addEventListener('contextmenu', event => event.preventDefault());
