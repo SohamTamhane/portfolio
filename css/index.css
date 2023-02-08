@@ -10,6 +10,15 @@
     font-family: Nunito-Regular;
 }
 
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0a192f url('/images/loading.gif') no-repeat center;
+    background-size: auto 50px;
+    z-index: 100;
+}
+
 html{
     scroll-behavior: smooth;
 }
