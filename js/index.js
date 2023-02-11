@@ -42,10 +42,10 @@ class TxtType {
 }
 
 
-window.onload = function() {
+// window.onload = function() {
     
-    var preloader = document.getElementById('loading');
-    preloader.style.display = 'none';
+    // var preloader = document.getElementById('loading');
+    // preloader.style.display = 'none';
 
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
@@ -60,7 +60,7 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};
+// };
 
 
 var name_input = document.getElementById('input-name');
